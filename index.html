@@ -19,79 +19,88 @@
 
 <body>
     <header>
-        <h1><b>NIA SMITH</b></h1>
-        <nav class="nav justify-content-evenly">
-            <a href="#">Home</a>
+        <nav class="nav justify-content-center">
+            <b><a href="#">Home</a></b>
             <a href="/resume/">Resume</a>
             <a href="/clips/">Clips</a>
             <a href="/contact/">Contact</a>
         </nav>
     </header>
     <main>
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-md-8"> <!--this is for the about me box-->
+        <div class="container-fluid">
+            <section class="row align-content-center">
+                <div class="col-md-4"> <!--this is for the about me box-->
                     <div class="col align-content-center">
                         <h2>About Me</h2>
-                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Lobortis elit arcu natoque nostra consequat posuere nascetur enim. Iaculis arcu velit vulputate himenaeos aptent per, sapien vehicula faucibus. Sollicitudin posuere nec ac dis aptent. Accumsan sit ipsum mi aliquam inceptos sapien turpis dolor ante. Lorem ipsum odor amet, consectetuer adipiscing elit. Justo hendrerit mollis torquent aliquet malesuada.</p>
-
+                        <section class="row align-content-center">
+                         <img src="images/aboutmephoto.jpeg" alt="Profile Pic" class="img.fluid" style="height: 500px; width: 700px;">
+                        </section>
+                        <p>Hello and welcome to my portfolio. My name is Nia Smith and I am a sophmore at the University
+                            of Maryland. I am a journalism major with a minor in general bussines and I am also apart of
+                            the Media, Self and Society Scholars program. In this program we look into how media impacts
+                            society and learn tools to help up navigate the internet. I am still trying to figure out
+                            what I want to do in the future, but I am really interested in broadcast journalism,
+                            pop-culture and entertainment journalsim and sports journalism. Thank you for visiting my
+                            website and checking out some of my work.</p>
+                        <a href="/contact/">Want to chat?</a>
                     </div>
                 </div>
-                <div class="col-md-4"> <!--This is for the picture-->
-                    <section class="col justify-content-center">
-                        <img src="images/aboutmephoto.jpeg" style="height: 400px; width: 400px; border-radius: 50%;" alt="Profile Pic" class="img.fluid">
+                <div class="col-md-8" style="padding-left: 100px;"> <!--This is for the carosal-->
+                    <section class="row align-content-center">
+                    <h2>Featured Work</h2>
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                           <a href="https://dbknews.com/2024/10/01/nba-player-reflects-time-umd-heritage-new-documentary/"> <img src="images/aiewreal.png" class="d-block w-100" alt="All I Ever Wanted"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Former NBA player reflects on time at UMD, heritage in new documentary</h5>
+                              <p> Audience members attended a screening of All I Ever Wanted, in honor of National Hispanic Heritage Month, and participated in a live Q&A and meet and greet with the director and star following the movie.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="https://dbknews.com/2024/09/20/demi-lovator-directorial-debut-spotlights-struggled-child-actors/"><img src="images/demilovatodocu.png" class="d-block w-100" alt="Demi Lovato Documentary"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Demi Lovato’s directorial debut spotlights the struggles of child actors</h5>
+                              <p> Demi Lovato, along with other stars, share both the highs and lows of being in the spotlight at such a young age.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="https://dbknews.com/2024/10/04/joker-folie-a-deux-divisive-musical-whirlwind/"><img src="images/jokerfolieadeux.png" class="d-block w-100" alt="Joker Folie a Deux"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>‘Joker: Folie a Deux’ is a divisive, musical whirlwind</h5>
+                              <p>Joker: Folie à Deux delivers a clever, but weird, performance that can only be grasped by those who truly understood the message.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </section>
                 </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="row justify-content-evenly"> <!--This is for the boxes that lead to the types of journalisim-->
-            <div class="col-lg-3 col-sm-4">
-                <img src="images/clipsphoto.jpeg" style="height: 300px; width: 300px; padding-right: 50px;" alt="Clips" class="img.fluid">
-                <h5>Clips</h5>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <img src="images/resume.jpeg" style="height: 300px; width: 300px; padding-right: 50px;"  alt="Resume" class="img.fluid">
-                <h5>Resume</h5>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <img src="images/contactme.jpeg" style="height: 300px; width: 300px; padding-right: 50px;"  alt="Contact Me" class="img.fluid">
-                <h5>Contact Me</h5>
-            </div>
-        </section>
-
-        <section class="row justify-content-center"> <!--This is for the boxes that lead to the types of journalisim-->
-            <div class="col-lg-3 col-sm-4">
-                <img src="images/photojournalism.jpg" style="height: 300px; width: 300px; padding-right: 50px;" alt="Clips" class="img.fluid">
-                <h5>Photo Journalism</h5>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <img src="images/videojournalism.jpg" style="height: 300px; width: 300px; padding-right: 50px;"  alt="Resume" class="img.fluid">
-                <h5>Video Journalism</h5>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <img src="images/printjournalism.jpg" style="height: 300px; width: 300px; padding-right: 50px"" alt="Clips" class="img.fluid">
-                <h5>Print Journalism</h5>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="container-fluid">
         <div class="row justify-content-center">
             <h4>nia smith</h4>
         </div>
         <div class="justify-content-start">
-            <img src="images/twitter.png" style="height: 55px; width: 70px;">
-            <img src="images/instareal.png" style="height: 55px; width: 70px;">
-            <img src="images/linkiden.png" style="height: 55px; width: 70px;">
-            <img src="images/gmail.png" style="height: 55px; width: 70px;">
-
+            <a href="https://x.com/NiaSmith_News"><img src="images/twitter.png" alt="twitter" style="height: 55px; width: 70px;"></a>
+            <a href="https://www.instagram.com/niasmith_news/"><img src="images/instareal.png" alt="instagram" style="height: 55px; width: 70px;"></a>
+            <a href="https://www.linkedin.com/in/nia-smith-478532257/"><img src="images/linkiden.png" style="height: 55px; width: 70px;"></a> 
+            <a href="mailto:niasmith2023@gmail.com"><img src="images/gmail.png" style="height: 55px; width: 70px;"></a> 
         </div>
-        <div>
-            <p><b>contact</b>
-            <p><b>about</b></p>
-            <p><b>advice for me</b></p>
-            </div>
     </footer>
 </body>
-
 </html>
